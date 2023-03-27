@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <div class="ion-text-center">
+        Iniciar sesión
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <img src="assets/login.svg" alt="img" class="icon" />
+
+  <ion-item>
+    <ion-label position="floating">
+      correo electrónico:
+      <ion-input type="email" name="email" id="ema" [(ngModel)]="email">
+      </ion-input>
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">
+      Contraseña:
+      <ion-input
+        type="password"
+        name="password"
+        id="con"
+        [(ngModel)]="password"
+      >
+      </ion-input>
+    </ion-label>
+  </ion-item>
+
+  <div class="pt-15">
+    <ion-button
+      expand="block"
+      (click)="login()"
+      class="espacios"
+      color="tertiary"
+    >
+      Ingresar
+    </ion-button>
+    <div class="pt-15">
+      <ion-button
+        expand="block"
+        (click)="registro()"
+        class="espacios"
+        color="secondary"
+      >
+        Registro
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
